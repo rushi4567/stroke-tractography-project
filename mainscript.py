@@ -11,7 +11,7 @@ atlas_img = nib.load(atlas_path)
 lesion_data = lesion_img.get_fdata()
 atlas_data = atlas_img.get_fdata()
 
-
+#ensure voxel resolution matches both atlas and lesion image
 
 from nilearn.image import resample_to_img
 resampled_lesion_img = resample_to_img(
